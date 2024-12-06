@@ -1,0 +1,16 @@
+{
+    "INPUT_SIGNALS":[],
+    "OUTPUT_SIGNALS":[],
+    "TRAIN_DATA_PATH":"",
+   " TEST_DATA_PATH":"",
+    "EPOCHS":100,
+    "BATCH_SIZE":5,
+    "VAL_SPLIT":0.2,
+    "N_HEAD":,
+    "D_MODEL":,
+    "ENCODER_LAYERS":10,
+    "DECODER_LAYERS":10,
+    "FEEDFRWD_DIM":512,
+    "LR":0.05,
+    "PATIENCE":20
+}
