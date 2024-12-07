@@ -52,13 +52,10 @@ def selecting_req_signals(df, reqSignals):
 
 def scale_data(trainDataFrame, testDataFrame,req_input_signal, req_output_signal):
     """scales the features of train and test data within -1 to 1. 
-    for example, vehicle velocity ranges 0 to 100, while engine rpm varies from 700 to 3000. 
 
-    so converting all the data within -1 to 1 for the purpose of training
-
-    :param trainDataFrame : dataframe of mf4 files in train data path
+    :param trainDataFrame : dataframe of csv files in train data path
     :type trainDataFrame: pd.DataFrame
-    :param testDataFrame : dataframe of mf4 files in test data path
+    :param testDataFrame : dataframe of csv files in test data path
     :type testDataFrame: pd.DataFrame
     :param req_input_signal : list of input features
     :type req_input_signal: list
@@ -88,7 +85,7 @@ def scale_data(trainDataFrame, testDataFrame,req_input_signal, req_output_signal
 def read_csv_file(dataPath, reqSignals):
     """reads MF4 files from a particular path and converts into dataframe
 
-    :param datapath : input path of mf4 files.
+    :param datapath : input path of csv files.
     :type arr: str
     :param reqSignals: list of signlas required 
     :type reqSignals: list
